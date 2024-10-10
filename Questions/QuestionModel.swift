@@ -7,7 +7,7 @@
 
 import Foundation
 
-class QuestionModel: Identifiable, questionFull {
+class QuestionModel: Identifiable {
     let id = UUID().uuidString
     
     var question: String

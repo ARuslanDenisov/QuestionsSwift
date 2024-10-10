@@ -386,4 +386,13 @@ class QuestionsBank {
         if let quest = question { return quest }
         return swiftUI[0]
     }
+    
+    func get3Quest () -> [QuestionModel] {
+        var array: [QuestionModel]  = []
+        for i in 1...3 {
+            let quest = getRandonQuestion ("All")
+            array.append(quest)
+        }
+        return array
+    }
 }
