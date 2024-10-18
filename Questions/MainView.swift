@@ -37,6 +37,17 @@ struct MainView: View {
                     }
                     .frame(width: 300, height: 100)
                 }
+                NavigationLink {
+                    QuestionList()
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundStyle(.blue)
+                        Text("Список вопросов")
+                            .foregroundStyle(.white)
+                    }
+                    .frame(width: 300, height: 100)
+                }
                 Spacer()
             }
         }

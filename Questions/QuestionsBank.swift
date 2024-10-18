@@ -368,8 +368,8 @@ class QuestionsBank {
             """
         )
     ]
-
-
+    
+    
     func getRandonQuestion(_ theme: String) -> QuestionModel {
         var question: QuestionModel? = nil
         switch theme {
@@ -394,5 +394,9 @@ class QuestionsBank {
             array.append(quest)
         }
         return array
+    }
+    
+    func getAllQuestion () -> [QuestionModel] {
+        self.swiftUI + self.mainQuestions + self.gcdQuestions + self.memoryQuestions + self.archPatterns
     }
 }
